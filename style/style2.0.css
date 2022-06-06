@@ -13,6 +13,9 @@ body {
     margin-left: 5%;
     margin-right: 5%;
 }
+.burger_menu {
+    display: none;
+}
 a {
     text-decoration: none;
     color: black;
@@ -53,13 +56,14 @@ header {
 .header_contacts_text a {
     color: #F9512E;
 }
+
 .first_block_page {
     
     display: flex;
     height: 584px;
     background-size: contain;
     background-position: center;
-    background-image: url(photo.style/Cookie.png);
+    background-image: url(photo/Cookie.png);
     background-repeat: no-repeat;
     
 }
@@ -115,7 +119,7 @@ header {
 
 }
 
-.Second_page_title h3 {
+.second_page_title h3 {
     font-weight: 400;
     font-size: 72px;
     line-height: 85%;
@@ -123,7 +127,7 @@ header {
     font-weight: bold;
     margin-top: 218px;
 }
-.Second_page_title p {
+.second_page_title p {
     font-weight: bold;
     font-size: 16px;
     line-height: 150%;
@@ -292,6 +296,60 @@ footer {
    
 
 }
+@media (max-width: 400px) {
+    .bor {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .burger_menu {
+        
+    }
+    .background_feedback_block {
+       min-height: 1100px;
+      
+    }
+    .header_block2 {
+        display: none;
+    }
+    footer {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    .block_title_p_feedback {
+        flex-wrap: wrap;
+    }
+    
+    .catalog_two_blocks_block1_p2 {
+        height: 80px;
+    }
+    .first_block_page p {
+        margin-bottom: 32px;
+        margin-top: 32px;
+    }
+    .first_block_page {
+        height: 684px;
+        background-image: url(photo/Cookie.png);
+        background-position: bottom;
+    }
+    .first_block_page button {
+        margin-top: 360px;
+    }
+    .second_page_title h3 {
+        margin-top: 150px;
+    }
+    .first_block_page h1 {
+        text-align: center;
+    }
+    .first_block_page p {
+        margin: 0px;
+        text-align: center;
+        width: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    
+}
 
 
 
@@ -301,7 +359,7 @@ footer {
     height: 718px;
     background-size: contain;
     background-position: center;
-    background-image: url(photo.style/Crumbs.png);
+    background-image: url(photo/Crumbs.png);
     background-repeat: no-repeat;
 
 }
