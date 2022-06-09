@@ -60,11 +60,9 @@ header {
 }
 
 .first_block_page {
-    
-    display: flex;
-    height: 584px;
-    background-size: contain;
-    background-position: center;
+    height: 586px;
+    width: 100%;
+    background-position: top;
     background-image: url(photo/Cookie.png);
     background-repeat: no-repeat;
     
@@ -79,20 +77,28 @@ header {
     font-weight: bold;
     font-size: 130px;
     line-height: 85%;
+    text-align: center;
     
 }
 .first_block_page p {
     font-weight: bold;
     font-size: 16px;
     line-height: 150%;
+    /*
     margin-top: 144px;
-
+*/
+}
+.first_page_block_text {
+    height: 100%;
+}
+.first_page_block_text p {
+    padding-top: 144px;
+   
 }
 .first_block_page button {
     color: #F9512E;
     font-weight: bold;
     font-size: 16px;
-    line-height: 100%;
     background: #FFEEFC;
     border: 1px solid #F9512E;
     border-radius: 16px;
@@ -100,19 +106,19 @@ header {
     padding-bottom: 10px;
     width: 277px;
     cursor: pointer;
-    
 }
+
+
 .first_page_block_text p{
     margin-bottom: 80px;
 }
 .first_page_block_text h1{
     margin-bottom: 80px;
-    
 }
-.first_block_page {
-    display: flex;
+.first_page_block_text h1 {
+    width: 100%;
+}
 
-}
 .big_cookie {
     margin-top: 50px;
     width: 100%;
@@ -222,7 +228,7 @@ footer {
 
 ._footer_block1 a {
     color: white;  
-    padding-top: 8px;
+    padding-top: 16px;
     
 }
 ._footer_block1 li {
@@ -240,6 +246,7 @@ footer {
     padding-right: 10%;
     padding-top: 90px;
     padding-bottom: 90px;
+    
 }
 .footer_block1_icons {
     display: flex;
@@ -250,7 +257,22 @@ footer {
 ._footer_block2 h2 {
     font-size: 58px;
     margin-bottom: 40px;
+    font-style: normal
 
+}
+.block2_contact a {
+    padding-bottom: 16px;
+    color: white;
+    display: inline;
+    
+}
+.phone_numbers a{
+    display: block;
+    font-style: normal
+}
+.block2_contact p {
+    padding-bottom: 16px;
+    
 }
 .block2_contact img {
     display: none; 
@@ -258,24 +280,34 @@ footer {
 .footer_email_adaptive {
     display: none;
     
+    
 }
+.footer_email_adaptive a {
+    font-style: normal;
+}
+.footer_email a {
+    font-style: normal;
+}
+.label {
+    font-style: normal;
+}
+
 
 .block2_contact {
     display: flex;
     justify-content: space-between;
 }
-.block2_contact p {
-    margin-bottom: 16px;
-    
-    
-}
+
 .label {
     margin-top: 72px;
 }
 .under_the_menu {
     color: #7F8096;
     font-weight: bold;
+    font-style: normal
 }
+
+
 @media (max-width: 768px) {
     .header_block1 {
         font-size: 25px;
@@ -295,10 +327,16 @@ footer {
     width: 100%;
     
    }
+   .first_page_block_text p {
+       padding: 0px;
+   }
    .numbers_reviews h2 {
        margin-right: 70px;
        width: 215px;
        
+   }
+   .numbers_block_feedback h2 {
+      margin-top: 35px;
    }
    .first_block_page {
     background-size: 426px 428px;
@@ -325,7 +363,13 @@ footer {
 }
 @media (max-width: 768px) {
     .background_feedback_block {
-        min-height: 1000px;
+        min-height: 700px;
+     }
+     
+}
+@media (max-width: 628px) {
+    .background_feedback_block {
+        min-height: 1100px;
        
      }
 }
@@ -361,9 +405,9 @@ footer {
         margin-top: 32px;
     }
     .first_block_page {
-        height: 684px;
-        background-image: url(photo/Cookie.png);
         background-position: bottom;
+        background-image: url(photo/Cookie.png);
+        
     }
     .first_block_page button {
         margin-top: 360px;
@@ -389,7 +433,9 @@ footer {
     }
     .footer_email {
         display: none;
+        
     }
+    
     footer img {
         
         padding-right: 20px;
@@ -406,6 +452,10 @@ footer {
     }
     .footer_email_adaptive {
         display: block;
+        
+    }
+    .footer_email_adaptive {
+        font-style: normal;
     }
     .footer_block1_icons {
         display: inline-block;
@@ -418,6 +468,16 @@ footer {
     .first_page_block_text h1 {
         font-size: 50px;
     }
+    ._footer_block2 h2 {
+        font-size: 48px;
+    }
+    
+}
+@media (max-width: 330px) {
+    .background_feedback_block {
+        min-height: 1200px;
+       
+     }
 }
 
 
@@ -444,6 +504,17 @@ footer {
     width: 600px;
     
 }
+.numbers_block_feedback {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.reviews_block_feedback {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .block_title_p_feedback p {
     font-weight: bold;
     font-size: 16px;
@@ -451,25 +522,24 @@ footer {
     width: 544px;
 }
 .numbers_reviews {
-    display: flex;
-    justify-content: space-between;
     font-weight: bold;
     font-size: 65px;
     color: #F9512E;
-    flex-wrap: wrap;
     margin-top: 144px;
     
 }
 
+
 .numbers_reviews p {
     font-size: 16px;
     color: black;
+    width: 192px;
 }
 
 
 /** Burger page **/
 main  {
-    margin-top: 40%;
+    margin-top: 30%;
 }
 main li {
     width: 100%;
